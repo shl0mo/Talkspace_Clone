@@ -2,6 +2,16 @@
 <head>
     <title>Talkspace clone</title>
     <style>
+        @font-face{
+            font-family: 'Roboto';
+            src: url('./assets/fonts/Roboto/Roboto-Bold.ttf');
+        }
+
+        @font-face{
+            font-family: 'Roboto Black';
+            src: url('./assets/fonts/Roboto/Roboto-Black.ttf');
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -10,23 +20,77 @@
 
         header {
             color: #FFF;
-            height: 70px;
+            height: 70;
             display: flex;
             align-items: center;
+            justify-content: space-between;
             padding: 16px 20px 15px 21px;
+            font-family: 'Roboto';
+            font-size: 15px;
+        }
+
+        .logo {
+            width: 129px;
+            height: 37px;
+        }
+
+        .nav-box {
+            width: 511.78px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .nav-box nav a {
+            color: #005368;
+            font-family: Roboto, sans-serif;
+            font-size: 15px;
+            padding: 9px 14px 10px;
+            margin: 0px 2.5px;
+            border-radius: 10px;
+        }
+
+        .nav-box nav a:hover {
+            background-color: rgb(244,246,250);
+            cursor: pointer;
+            transition-delay: 65ms;
+        }
+
+        .nav-box nav a:last-child {
+            font-family: 'Roboto Black', sans-serif;
+            color: white;
+            background-color: #175C62;
+            padding: 10px 20px 9px;
+            margin: 0px 2.5px 0px 13.5px;
+        }
+
+        .nav-box nav a:last-child:hover {
+            background-color: rgb(25,62,66);
         }
 
         .section-1 {
             background-color: #000;
             height: 600px;
-            background-image: url('./img/main-background.jpg');
+            background-image: url('./assets/img/main-background.jpg');
             background-size: cover;
         }
+
     </style>
 </head>
 <body>
     <header>
-        <img src="./img/logo.png" class="logo"></img>
+        <a href="./index.html"><img src="./assets/img/logo.png" class="logo"></img></a>
+        <div class="nav-box">
+            <nav>
+                <a>How it works</a>
+                <a>Benefits</a>
+                <a>Reviews</a>
+                <a>Log in</a>/
+                <a>Get started</a>
+            </nav>
+        </div>
     </header>
     <section class="section-1">
         <div class="section-1__content">
