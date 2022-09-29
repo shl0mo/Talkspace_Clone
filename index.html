@@ -2,14 +2,19 @@
 <head>
     <title>Talkspace clone</title>
     <style>
-        @font-face{
-            font-family: 'Roboto';
+        @font-face {
+            font-family: 'Roboto Bold';
             src: url('./assets/fonts/Roboto/Roboto-Bold.ttf');
         }
 
-        @font-face{
+        @font-face {
             font-family: 'Roboto Black';
             src: url('./assets/fonts/Roboto/Roboto-Black.ttf');
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            src: url('./assets/fonts/Roboto/Roboto-Regular.ttf');
         }
 
         * {
@@ -25,7 +30,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 16px 20px 15px 21px;
-            font-family: 'Roboto';
+            font-family: 'Roboto Bold';
             font-size: 15px;
         }
 
@@ -58,12 +63,13 @@
             transition-delay: 65ms;
         }
 
-        .nav-box nav a:last-child {
+        .nav-box nav a:last-child, .button {
             font-family: 'Roboto Black', sans-serif;
             color: white;
             background-color: #175C62;
             padding: 10px 20px 9px;
             margin: 0px 2.5px 0px 13.5px;
+            border-radius: 10px;
         }
 
         .nav-box nav a:last-child:hover {
@@ -77,6 +83,73 @@
             background-size: cover;
         }
 
+        h1 {
+            color: white;
+            font-weight: bold;
+            font-size: 48px;
+            margin: 0px 0px 25px;
+        }
+       
+        .section-1__content-box {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin: 0px auto;
+            width: 980px;
+            height: 600px;
+        }
+
+        .section-1__content {
+            width: 570px;
+            height: 316px;
+            text-align: left;
+
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 38px;
+        }
+        
+        li {
+            width: 100%;
+        }
+
+        .green-tick-icon {
+            margin: 0px 12px 0px 0px;
+            width: 23px;
+            height: 22px;
+        }
+
+        .align-center {
+            display: flex;
+            align-items: center;
+        }
+
+        .section-1__content ul li {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            color: #FFF;
+            margin-bottom: 12px;
+        }
+
+        .button-ready {
+            margin: 0px 14px 0px 0px;
+            width: 250px;
+            height: 49px;
+            padding: 0px 13px;
+            font-size: 17px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -93,8 +166,33 @@
         </div>
     </header>
     <section class="section-1">
-        <div class="section-1__content">
-
+        <div class="section-1__content-box">
+            <div class="section-1__content">
+                <h1>Achieve your potential with our online therapy</h1>
+                <div>
+                <ul>
+                    <li>
+                        <div class="align-center">
+                            <img src="./assets/img/icons/green-tick.svg" class="green-tick-icon">Start immediately
+                        </div>
+                    </li>
+                    <li>
+                        <div class="align-center">
+                            <img src="./assets/img/icons/green-tick.svg" class="green-tick-icon">Easy matching to find your right therapist
+                        </div>
+                    </li>
+                    <li>
+                        <div class="align-center">
+                            <img src="./assets/img/icons/green-tick.svg" class="green-tick-icon">Message your therapist 24/7
+                        </div>
+                    </li>
+                </ul>
+                <a href="./index.html" >
+                    <button class="button button-ready">
+                        I'm ready
+                    </button>
+                </a>
+            </div>
         </div>
     </section>
 </body>
