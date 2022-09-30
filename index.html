@@ -195,6 +195,7 @@
             color: #005368;
             margin-bottom: 27px;
             font-family: 'Bourton Line', sans-serif;
+            letter-spacing: -1px;
         }
 
         .box-companies {
@@ -214,6 +215,60 @@
             position: absolute;
             left: -50px;
             margin-top: 200px;
+            width: 40vw;
+        }
+
+        .white-circle {
+            position: absolute;
+            margin-top: 230px;
+            left: 250px;
+            background-color: #FFF;
+            border-radius: 100%;
+        }
+
+        .flex-center-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .large-white-circle {
+            width: 403px;
+            height: 403px;
+            box-shadow: 2px 10px 55px rgba(0,0,0,0.2);
+        }
+
+        .medium-white-circle {
+            position: relative;
+            margin: 0px auto;
+            left: 0;
+            width: 335px;
+            height: 335px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+        }
+
+        .small-white-circle {
+            position: relative;
+            margin: 0px auto;
+            left: 0;
+            width: 227px;
+            height: 227px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+        }
+
+        .smaller-white-circle {
+            position: relative;
+            margin: 0px auto;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+        }
+
+        .section-2__content {
+            display: flex;
+            width: 960px;
+            height: 373px;
         }
     </style>
 </head>
@@ -275,7 +330,18 @@
         </div>
     </section>
     <section class="section-2">
-        <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa0ff226768a_full-blob.svg" class="section-2__blob-img">
+        <div class="section-2__content">
+            <div>
+                <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa0ff226768a_full-blob.svg" class="section-2__blob-img">
+                <div class="white-circle large-white-circle flex-center-center">
+                    <div class="white-circle medium-white-circle flex-center-center">
+                        <div class="white-circle small-white-circle flex-center-center">
+                            <div class="white-circle smaller-white-circle flex-center-center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </hmtl>
