@@ -278,6 +278,8 @@
         }
 
         .section-3__content__circles {
+            position: relative;
+            top: -33px;
             width: 50%;
         }
 
@@ -285,12 +287,45 @@
             color: #27325A;
             margin: 0px 0px 20px;
             position: relative;
-            top: 200px;
+            /*top: 200px;*/
             font-size: 36px;
         }
 
-        .section-3__content__description {
+        .section-3__content__text {
             width: 50%;
+        }
+
+        .section-3__description {
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+            color: #314D5C;
+        }
+
+        .section-3__ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 100%;
+            height: 20px;
+            margin: 20px 0px 40px;
+        }
+        
+        .section-3__ul li {
+            font-family: 'Roboto Bold', sans-serif;
+            font-size: 16px;
+            color: #12787B;
+            line-height: 29px;
+            letter-spacing: .1px;
+            margin-right: 20px;
+        }
+
+        .section-3__ul li div {
+            width: 149.85px;
+        }
+
+        .section-3__ul li:last-child {
+            list-style-image: none;
+            margin-left: 16px;
         }
     </style>
 </head>
@@ -367,8 +402,40 @@
                     </div>
                 </div>
             </div>
-            <div class="section-3__content__description">
+            <div class="section-3__content__text">
                 <h2 class="section-3__h2">Personalized care starts here</h2>
+                <p class="section-3__description">Our platform is the most comprehensive and convenient way to take care of your mental health and wellness.
+                    We offer therapy for individuals, teens and couples, across a wide range of specialties. Connect with a licensed therapist from the comfort 
+                    of your device—by live video, text or phone.</p>
+                <ul class="section-3__ul">
+                    <li>
+                        <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa6a55267689_checkmark.svg"/> Depression
+                    </li>
+                    <li>
+                        <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa6a55267689_checkmark.svg"/> Trauma & grief
+                    </li>
+                    <li>
+                        <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa6a55267689_checkmark.svg"/> Chronic illness
+                    </li>
+                    <li>
+                        <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa6a55267689_checkmark.svg"/> Anxiety and Stress
+                    </li>
+                    <li>
+                        <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa6a55267689_checkmark.svg"/> Anger
+                    </li>
+                    <li>
+                        <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa6a55267689_checkmark.svg"/> Produtivity
+                    </li>
+                    <li>
+                        <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa6a55267689_checkmark.svg"/> Relationships
+                    </li>
+                    <li>
+                        <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa6a55267689_checkmark.svg"/> Sleep
+                    </li>
+                    <li>
+                        and more...
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
