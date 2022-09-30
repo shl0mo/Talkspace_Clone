@@ -86,7 +86,6 @@
             height: 600px;
             background-image: url('./assets/img/main-background.jpg');
             background-size: cover;
-            z-index: 2;
         }
 
         h1 {
@@ -182,14 +181,15 @@
             margin: -8px 0px 8px;
         }
 
-        .section-1__bottom {
+        .section-2__content {
+            position: relative;
             height: 148px;
             background-color: #F4F6Fa;
             padding: 29px 50.75px;
             text-align: center;
         }
 
-        h2 {
+        .section-1__h2 {
             font-size: 22px;
             font-weight: bold;
             color: #005368;
@@ -206,22 +206,23 @@
             justify-content: space-between;
         }
 
-        .section-2 {
+        .section-3 {
             position: relative;
+            display: flex;
+            align-items: center;
             height: 590px;
+            padding: 117px 50.75px 100px;
         }
 
-        .section-2__blob-img {
+        .section-3__blob-img {
             position: absolute;
             left: -50px;
-            margin-top: 200px;
+            
             width: 40vw;
         }
 
         .white-circle {
             position: absolute;
-            margin-top: 230px;
-            left: 250px;
             background-color: #FFF;
             border-radius: 100%;
         }
@@ -267,22 +268,41 @@
             background-size: 100%;
         }
 
-        .section-2__content {
+        .section-3__content {
+            position: relative;
+            margin: 0px auto;
             display: flex;
+            flex-direction: row;
             width: 960px;
             height: 373px;
+        }
+
+        .section-3__content__circles {
+            width: 50%;
+        }
+
+        .section-3__h2 {
+            color: #27325A;
+            margin: 0px 0px 20px;
+            position: relative;
+            top: 200px;
+            font-size: 36px;
+        }
+
+        .section-3__content__description {
+            width: 50%;
         }
     </style>
 </head>
 <body>
     <header>
-        <a href="./index.html"><img src="./assets/img/logo.png" class="logo"></img></a>
+        <a href="./index.html"><img src="./assets/img/logo.png" class="logo"/></a>
         <div class="nav-box">
             <nav>
                 <a>How it works</a>
                 <a>Benefits</a>
                 <a>Reviews</a>
-                <a>Log in</a>/
+                <a>Log in</a>
                 <a>Get started</a>
             </nav>
         </div>
@@ -294,24 +314,26 @@
                 <ul>
                     <li>
                         <div class="align-center">
-                            <img src="./assets/img/icons/green-tick.svg" class="green-tick-icon">Start immediately
+                            <img src="./assets/img/icons/green-tick.svg" class="green-tick-icon"/>Start immediately
                         </div>
                     </li>
                     <li>
                         <div class="align-center">
-                            <img src="./assets/img/icons/green-tick.svg" class="green-tick-icon">Easy matching to find your right therapist
+                            <img src="./assets/img/icons/green-tick.svg" class="green-tick-icon"/>Easy matching to find your right therapist
                         </div>
                     </li>
                     <li>
                         <div class="align-center">
-                            <img src="./assets/img/icons/green-tick.svg" class="green-tick-icon">Message your therapist 24/7
+                            <img src="./assets/img/icons/green-tick.svg" class="green-tick-icon"/>Message your therapist 24/7
                         </div>
                     </li>
                 </ul>
                 <a href="./index.html">
+                    <div>
                     <button class="button button-ready">
                         I'm ready
                     </button>
+                    </div>
                 </a>
             </div>
         </div>
@@ -319,8 +341,10 @@
             <h4>Jane Smith</h4>
             <p class="therapist-license">Licenced Counselor</p>
         </div>
-        <div class="section-1__bottom">
-            <h2>THE #1 TRUSTED THERAPY APP</h2>
+    </section>
+    </section class="section-2">
+        <div class="section-2__content">
+            <h2 class="section-1__h2">THE #1 TRUSTED THERAPY APP</h2>
             <div class="box-companies">
                 <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/5f0c9acf46a6f5392935edcf_cnn.svg"/>
                 <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/5f0c9acf46a6f5225f35edde_huffingtonpost.svg"/>
@@ -331,10 +355,10 @@
             </div>
         </div>
     </section>
-    <section class="section-2">
-        <div class="section-2__content">
-            <div>
-                <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa0ff226768a_full-blob.svg" class="section-2__blob-img">
+    <section class="section-3">
+        <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa0ff226768a_full-blob.svg" class="section-3__blob-img">
+        <div class="section-3__content">
+            <div class="section-3__content__circles">
                 <div class="white-circle large-white-circle flex-center-center">
                     <div class="white-circle medium-white-circle flex-center-center">
                         <div class="white-circle small-white-circle flex-center-center">
@@ -342,6 +366,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="section-3__content__description">
+                <h2 class="section-3__h2">Personalized care starts here</h2>
             </div>
         </div>
     </section>
