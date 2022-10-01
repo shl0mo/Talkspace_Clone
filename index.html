@@ -444,6 +444,10 @@
             height: 266px;
         }
 
+        .box-step {
+            width: 270px;
+        }
+
         .box-step div:first-child{
             display: flex;
             justify-content: center;
@@ -458,6 +462,12 @@
             height: 120px;
         }
 
+        .box-step__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .section-4__h3 {
             font-family: 'Roboto Bold', sans-serif;
             font-size: 22px;
@@ -469,12 +479,14 @@
 
         .section-4__text {
             font-family: 'Roboto', sans-serif;
+            color: #314D5C;
             position: relative;
             width: 100%;
             max-width: 210px;
             font-size: 17px;
             line-height: 23px;
             text-align: center;
+            margin: none;
         }
 
         .margin-top-50 {
@@ -533,6 +545,46 @@
             font-family: 'Roboto', sans-serif;
             text-align: left;
         }
+
+        .benefits__li {
+            font-family: 'Roboto', sans-serif;
+            color: #314D5C;
+            background-size: 23px;
+            background-position: 0 5px;
+            background-repeat: no-repeat;
+        }
+
+        .benefits__li div {
+            margin-left: 30px;
+        }
+
+        .benefits-checkmark {
+            background-image: url('https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611c45b234be5a8eddca08d6_checkmark.png');
+        }
+
+        .benefits-people {
+            background-image: url('https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611c42ba10727182abc9ce3d_group.svg');
+        }
+
+        .benefits-heart {
+            background-image: url('https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611c42ba107271a204c9ce3a_heart.svg');
+        }
+
+        .benefits-padlock {
+            background-image: url('https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611c45ced8fd8564b5aa0a27_lock.png');
+            background-size: 19px;
+        }
+
+        .box-app-of-day {
+            position: absolute;
+            left: 540px;
+            bottom: 44.81px;
+        }
+
+        .box-app-of-day img {
+            width: 112px;
+            height: 60px;
+        }   
     </style>
 </head>
 <body>
@@ -660,11 +712,11 @@
                 <div>
                     <img class="step-image" src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/62f29293530a76c6b0fe2a4a_icon-1.webp"/>
                 </div>
-                <div>
+                <div class="box-step__content">
                     <h3 class="section-4__h3">Help us get to know you</h3>
-                </div>
-                <div class="section-4__text">
-                    Give us a little insight into what brings you here.
+                    <div class="section-4__text">
+                        Give us a little insight into what brings you here.
+                    </div>
                 </div>
             </div>
             <div class="section-4__box-arrow">
@@ -674,11 +726,11 @@
                 <div>
                     <img class="step-image" src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/62f29294e54e01c6a3573d43_icon-2.webp"/>
                 </div>
-                <div>
+                <div class="box-step__content">
                     <h3 class="section-4__h3">Personalized match</h3>
-                </div>
-                <div class="section-4__text">
-                    We'll match you with a provider (typically within 48 hours).
+                    <div class="section-4__text">
+                        We'll match you with a provider (typically within 48 hours).
+                    </div>
                 </div>
             </div>
             <div class="section-4__box-arrow">
@@ -688,11 +740,11 @@
                 <div>
                     <img class="step-image" src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/62f2a51e63e6b52e043e4091_icon-3.webp"/>
                 </div>
-                <div>
+                <div class="box-step__content">
                     <h3 class="section-4__h3">Select a plan</h3>
-                </div>
-                <div class="section-4__text">
-                    Choose the plan that’s right for you.
+                    <div class="section-4__text">
+                        Choose the plan that’s right for you.
+                    </div>
                 </div>
             </div>
             <div class="section-4__box-arrow">
@@ -702,11 +754,11 @@
                 <div>
                     <img class="step-image" src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/62f2929503388a1138854569_icon-4.webp"/>
                 </div>
-                <div>
+                <div class="box-step__content">
                     <h3 class="section-4__h3">Start therapy</h3>
-                </div>
-                <div class="section-4__text">
-                    Meet your therapist, set goals, and begin your journey to feeling better.
+                    <div class="section-4__text">
+                        Meet your therapist, set goals, and begin your journey to feeling better.
+                    </div>
                 </div>
             </div>
         </div>
@@ -721,8 +773,25 @@
             <div>
                 <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/62f2a41212068e5e2e44ebc4_devices%20-p-800.webp"/>
             </div>
+            <div class="box-app-of-day">
+                <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611c42ba107271670ac9ce45_app-of-the-day.svg" class="app-of-day"/>
+            </div>
             <div>
                 <nobr><h2 class="section-5__h2">Our Benefits</h2></nobr>
+                <ul>
+                    <li class="benefits-checkmark benefits__li">
+                        <div>Trusted telehealth brand with 8+ years experience</div>
+                    </li>
+                    <li class="benefits-people benefits__li">
+                        <div>Industry-leading standards for clinical training, quality, and licensure</div>
+                    </li>
+                    <li class="benefits-heart benefits__li">
+                        <div>Both therapy and medication management all in one place</div>    
+                    </li>
+                    <li class="benefits-padlock benefits__li">
+                        <div>Surpasses the highest HIPAA + privacy standards, including SOC 2</div>    
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
