@@ -413,7 +413,7 @@
             justify-content: center;
             height: 646px;
             text-align: center;
-            padding: 70px 4% 20px;
+            padding: 70px 4%;
         }
 
         .section-4__h2 {
@@ -479,7 +479,7 @@
 
         .margin-top-50 {
             margin: 0px;
-            margin-top: 50px;
+            margin-top: 70px;
         }
 
         .section-4__box-arrow {
@@ -488,13 +488,50 @@
         }
 
         .section-5 {
-            height: 553px;
+            display: flex;
+            justify-content: center;
+            height: 513px;
             padding-top: 40px;
             padding-right: 0;
             padding-left: 0;
             font-family: 'Roboto' ,sans-serif;
             background-image: url('https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611c42ba107271ec6bc9ce3e_benefits.svg');
             background-size: cover;
+        }
+
+        .section-5__content {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            font-size: 18px;
+            min-width: 980px;
+            max-width: 980px;
+            height: 513px;
+            padding-bottom: 110.81px;
+            line-height: 28px;
+        }
+
+        .section-5__content img {
+            position: relative;
+            top: -60px;
+            left: -210px;
+            width: 648px;
+            height: 935px;
+        }
+
+        .section-5__h2 {
+            font-family: 'Times New Roman';
+            color: #27325A;
+            margin: 80px 0px 21px;
+            position: relative;
+            font-size: 44px;
+        }
+
+        .section-5__content div:last-child {
+            width: 100%;
+            max-width: 420px;
+            font-family: 'Roboto', sans-serif;
+            text-align: left;
         }
     </style>
 </head>
@@ -680,7 +717,14 @@
         </a>
     </section>
     <section class="section-5">
-
+        <div class="section-5__content">
+            <div>
+                <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/62f2a41212068e5e2e44ebc4_devices%20-p-800.webp"/>
+            </div>
+            <div>
+                <nobr><h2 class="section-5__h2">Our Benefits</h2></nobr>
+            </div>
+        </div>
     </section>
 </body>
 </hmtl>
