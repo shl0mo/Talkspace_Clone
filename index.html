@@ -74,6 +74,7 @@
             padding: 10px 20px 9px;
             margin: 0px 2.5px 0px 13.5px;
             border-radius: 10px;
+            transition: .2s;
         }
 
         .nav-box nav a:last-child:hover {
@@ -407,6 +408,9 @@
         }
 
         .section-4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             height: 646px;
             text-align: center;
             padding: 70px 4% 20px;
@@ -422,7 +426,7 @@
             letter-spacing: -1px;
         }
 
-        .section-4__h3 {
+        .section-4__p {
             font-family: 'Roboto', sans-serif;
             font-size: 18px;
             font-weight: normal;
@@ -433,15 +437,54 @@
 
         .section-4__container-steps {
             display: flex;
+            align-self:center;
             flex-direction: row;
             justify-content: space-around;
-            width: 100%;
+            width: 65vw;
             height: 266px;
+        }
+
+        .box-step div:first-child{
+            display: flex;
+            justify-content: center;
+            height: 140px;
+            margin-right: auto;
+            margin-bottom: 16px;
+            margin-left: auto;
         }
 
         .step-image {
             width: 121px;
             height: 120px;
+        }
+
+        .section-4__h3 {
+            font-family: 'Roboto Bold', sans-serif;
+            font-size: 22px;
+            color: #005368;
+            margin-bottom: 15px;
+            line-height: 26px;
+            letter-spacing: -.14px;
+        }
+
+        .section-4__text {
+            font-family: 'Roboto', sans-serif;
+            position: relative;
+            width: 100%;
+            max-width: 210px;
+            font-size: 17px;
+            line-height: 23px;
+            text-align: center;
+        }
+
+        .margin-top-50 {
+            margin: 0px;
+            margin-top: 50px;
+        }
+
+        .section-4__box-arrow {
+            position: relative;
+            top: 59px;
         }
     </style>
 </head>
@@ -480,11 +523,9 @@
                     </li>
                 </ul>
                 <a href="./index.html">
-                    <div>
                     <button class="button button-ready">
                         I'm ready
                     </button>
-                    </div>
                 </a>
             </div>
         </div>
@@ -566,53 +607,67 @@
     </section>
     <section class="section-4">
         <h2 class="section-4__h2">HOW IT WORKS</h2>
-        <h3 class="section-4__h3">Start your journey in just 4 easy steps</h3>
+        <h3 class="section-4__p">Start your journey in just 4 easy steps</h3>
         <div class="section-4__container-steps">
-            <div class="box-step-1">
+            <div class="box-step">
                 <div>
                     <img class="step-image" src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/62f29293530a76c6b0fe2a4a_icon-1.webp"/>
                 </div>
                 <div>
-                    <h3>Help us get to know you</h3>
+                    <h3 class="section-4__h3">Help us get to know you</h3>
                 </div>
-                <div>
+                <div class="section-4__text">
                     Give us a little insight into what brings you here.
                 </div>
             </div>
-            <div class="box-step-2">
+            <div class="section-4__box-arrow">
+                <img src='https://assets.website-files.com/5f0c9acf46a6f5084535ed71/5fa995f1b4b8087411dd5fb6_right-arrow.svg'/>
+            </div>
+            <div class="box-step">
                 <div>
                     <img class="step-image" src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/62f29294e54e01c6a3573d43_icon-2.webp"/>
                 </div>
                 <div>
-                    <h3>Personalized match</h3>
+                    <h3 class="section-4__h3">Personalized match</h3>
                 </div>
-                <div>
+                <div class="section-4__text">
                     We'll match you with a provider (typically within 48 hours).
                 </div>
             </div>
-            <div class="box-step-3">
+            <div class="section-4__box-arrow">
+                <img src='https://assets.website-files.com/5f0c9acf46a6f5084535ed71/5fa995f1b4b8087411dd5fb6_right-arrow.svg'/>
+            </div>
+            <div class="box-step">
                 <div>
                     <img class="step-image" src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/62f2a51e63e6b52e043e4091_icon-3.webp"/>
                 </div>
                 <div>
-                    <h3>Select a plan</h3>
+                    <h3 class="section-4__h3">Select a plan</h3>
                 </div>
-                <div>
+                <div class="section-4__text">
                     Choose the plan that’s right for you.
                 </div>
             </div>
-            <div class="box-step-4">
+            <div class="section-4__box-arrow">
+                <img src='https://assets.website-files.com/5f0c9acf46a6f5084535ed71/5fa995f1b4b8087411dd5fb6_right-arrow.svg'/>
+            </div>
+            <div class="box-step">
                 <div>
                     <img class="step-image" src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/62f2929503388a1138854569_icon-4.webp"/>
                 </div>
                 <div>
-                    <h3>Start therapy</h3>
+                    <h3 class="section-4__h3">Start therapy</h3>
                 </div>
-                <div>
+                <div class="section-4__text">
                     Meet your therapist, set goals, and begin your journey to feeling better.
                 </div>
             </div>
         </div>
+        <a href="./index.html">
+            <button class="button button-ready margin-top-50">
+                I'm ready
+            </button>
+        </a>
     </section>
 </body>
 </hmtl>
