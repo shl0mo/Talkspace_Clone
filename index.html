@@ -531,6 +531,11 @@
             height: 935px;
         }
 
+        .section-5__text {
+            position: relative;
+            width: 420px;
+        }
+
         .section-5__h2 {
             font-family: 'Times New Roman';
             color: #27325A;
@@ -549,13 +554,14 @@
         .benefits__li {
             font-family: 'Roboto', sans-serif;
             color: #314D5C;
+            margin-bottom: 12px;
             background-size: 23px;
             background-position: 0 5px;
             background-repeat: no-repeat;
         }
 
         .benefits__li div {
-            margin-left: 30px;
+            margin-left: 40px;
         }
 
         .benefits-checkmark {
@@ -564,6 +570,7 @@
 
         .benefits-people {
             background-image: url('https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611c42ba10727182abc9ce3d_group.svg');
+            background-size: 30px;
         }
 
         .benefits-heart {
@@ -584,7 +591,11 @@
         .box-app-of-day img {
             width: 112px;
             height: 60px;
-        }   
+        }
+
+        .section-5__imgs {
+            width: 55%;
+        }
     </style>
 </head>
 <body>
@@ -770,13 +781,15 @@
     </section>
     <section class="section-5">
         <div class="section-5__content">
-            <div>
-                <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/62f2a41212068e5e2e44ebc4_devices%20-p-800.webp"/>
+            <div class="section-5__imgs">
+                <div>
+                    <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/62f2a41212068e5e2e44ebc4_devices%20-p-800.webp"/>
+                </div>
+                <div class="box-app-of-day">
+                    <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611c42ba107271670ac9ce45_app-of-the-day.svg" class="app-of-day"/>
+                </div>
             </div>
-            <div class="box-app-of-day">
-                <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611c42ba107271670ac9ce45_app-of-the-day.svg" class="app-of-day"/>
-            </div>
-            <div>
+            <div class="section-5__text">
                 <nobr><h2 class="section-5__h2">Our Benefits</h2></nobr>
                 <ul>
                     <li class="benefits-checkmark benefits__li">
