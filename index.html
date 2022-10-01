@@ -341,33 +341,70 @@
         }
 
         .section-3__icons {
-            background-position: 50% 50%;
+            position: absolute;
+            z-index: 10;
+            border-radius: 100%;
+            background-position: center center;
             background-repeat: no-repeat;
             background-size: auto;
         }
 
         .div-icon-preventative-care {
-            position: absolute;
+            width: 63px;
+            height: 63px;
             top: 30px;
             left: 20px;
             background-color: #DAEEEE;
             background-image: url('https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa17b4267687_preventive-care.svg');
-            width: 63px;
-            height: 63px;
-            z-index: 3;
-            border-radius: 100%;
         }
 
         .div-icon-mindfulness-exercises {
-            position: absolute;
-            z-index: 3;
-            border-radius: 100%;
-            background-color: #33CFCA;
             width: 72px;
             height: 72px;
+            bottom: 0px;
             right: 58px;
-            bottom: 0;
+            background-color: #33CFCA;
             background-image: url('https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaaf8ff26768b_mindfulness-excercises.svg');
+        }
+
+        .div-icon-evaluation {
+            width: 57.6px;
+            height: 57.6px;
+            bottom: 40px;
+            left: 9px;
+            background-color: #FFF;
+            box-shadow: 0px 5px 8px rgba(39,50,90,0.2);
+            background-image: url('https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa4979267688_evaluation.svg');
+        }
+
+        .div-icon-coaching-therapy {
+            width: 62.08px;
+            height: 62.08px;
+            top: -9px;
+            right: 62px;
+            background-position: 50% 55%;
+            box-shadow: 0 0 0 6px #FFF;
+            background-color: #5C84FB;
+            background-image: url('https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa112926768c_coaching-and-therapy.svg');
+        }
+
+        .div-icon-goal-setting {
+            width: 40px;
+            height: 40px;
+            top: 46px;
+            left: -4px;
+            box-shadow: 0 0 0 6px #FFF;
+            background-color: #6F63DC;
+            background-image: url('https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa596a267686_goal-setting.svg');
+        }
+
+        .div-icon-medication-managment {
+            width: 58px;
+            height: 58px;
+            right: -27px;
+            box-shadow: 0 0 0 6px #FFF;
+            background-color: #F1D2D2;
+            background-image: url('https://assets.website-files.com/5f0c9acf46a6f5084535ed71/611abb9c32fdaa6ee926768f_medication-management.svg');
         }
     </style>
 </head>
@@ -440,8 +477,13 @@
                     <div class="div-icon-preventative-care section-3__icons"></div>
                     <div class="div-icon-mindfulness-exercises section-3__icons"></div>
                     <div class="white-circle medium-white-circle flex-center-center">
+                        <div class="div-icon-evaluation section-3__icons"></div>
+                        <div class="div-icon-coaching-therapy section-3__icons"></div>
                         <div class="white-circle small-white-circle flex-center-center">
-                            <div class="white-circle smaller-white-circle flex-center-center"></div>
+                            <div class="div-icon-goal-setting section-3__icons"></div>
+                            <div class="div-icon-medication-managment section-3__icons"></div>
+                            <div class="white-circle smaller-white-circle flex-center-center">
+                            </div>
                         </div>
                     </div>
                 </div>
