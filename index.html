@@ -598,10 +598,84 @@
         }
 
         .section-6 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
             position: relative;
             height: 618px;
+            padding-top: 80px;
             background-color: #FFF;
             z-index: 3;
+        }
+
+        .section-6__h2 {
+            font-size: 44px;
+            font-weight: 700;
+            color: #27325a;
+            line-height: 61px;
+            letter-spacing: 0;
+        }
+
+        .box-5-stars {
+            display: block;
+            width: 151px;
+            height: 22px;
+            margin-bottom: 42px;
+        }
+
+        .box-review {
+            width: 100%;
+            max-width: 320px;
+            margin-right: 5px;
+            margin-left: 5px;
+            padding: 25px 24px 32px;
+            border-radius: 6px;
+            background-color: #F4F6FA;
+            line-height: 28px;
+        }
+
+        .box-review__avatar img {
+            width: 72px;
+            height: 72px;
+            margin-right: 12px;
+            border-radius: 50%;            
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .box-avatar {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+
+        .avatar-name {
+            font-family: 'Roboto Bold', sans-serif;
+            color: #27325A;
+        }
+
+        .twitter-user {
+            font-family: 'Roboto', sans-serif;
+            color: #657891;
+        }
+
+        .box-review__text {
+            font-family: 'Roboto';
+            color: #314D5C;
+            font-size: 17px;
+        }
+        
+        .box-review__text a {
+            transition: color .2s;
+            color: #08b198;
+            font-weight: 700;
+            text-decoration: none;  
+        }
+
+        .section-6__reviews {
+            display: flex;
+            flex-direction: row;
         }
     </style>
 </head>
@@ -816,7 +890,55 @@
         </div>
     </section>
     <section class="section-6">
-
+        <h2 class="section-6__h2">More than 60,000 5-star reviews</h2>
+        <div class="box-5-stars">
+            <img src="https://assets.website-files.com/5f0c9acf46a6f5084535ed71/5fa995f1b4b8080e59dd5fcd_5-stars.svg"/>
+        </div>
+        <div class="section-6__reviews">
+            <div class="box-review">
+                <div class="box-avatar">
+                    <div class="box-review__avatar">
+                        <img src='https://assets.website-files.com/5f0f4924daaed66da8c7cfb7/62fd3b5ba4c819e623c1d2ef_15.webp'/>
+                    </div>
+                    <div class="box-review__avatar-info">
+                        <div class="avatar-name">Name</div>
+                        <div class="avatar-twitter">
+                            <a class="twitter-user">@username</a>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="box-review__text">
+                    <p>
+                        So I recently started using this platform  for online therapy and I refuse to shut up about it. I can text my therapist whenever I want through the app, there are tons of stress relief/coping exercise on the app, AND ALL BLACK PEOPLE get a discount in support of
+                        <a href="https://twitter.com/hashtag/BLM?src=hashtag_click">#BLM</a>. It's Like THAT!
+                    </p>
+                </div>
+            </div>
+            <div class="box-review">
+                <div class="box-avatar">
+                    <div class="box-review__avatar">
+                        <img src='https://assets.website-files.com/5f0f4924daaed66da8c7cfb7/62fd3b6a0bbea95a9054bfd8_16.webp'/>
+                    </div>
+                    <div class="box-review__avatar-info">
+                        <div class="avatar-name">Name</div>
+                        <div class="avatar-twitter">
+                            <a class="twitter-user">@username</a>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="box-review__text">
+                    <p>
+                        Two weeks ago, I personally started working with a Talkspace therapist for the 1st time.
+                    </p>
+                    <p>
+                        For years I’ve travelled the country talking about relationships of influence, but I’ve used that travel as an excuse not to seek the support I know I need. 
+                    </p>
+                    <p>
+                        This pause gave me time to act.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </hmtl>
