@@ -609,7 +609,7 @@
             z-index: 3;
         }
 
-        .section-6__h2 {
+        .section-6__h2, .section-7__h3 {
             font-size: 44px;
             font-weight: 700;
             color: #27325a;
@@ -693,12 +693,50 @@
         }
 
         .section-7__boxes {
+            display: flex;
+            align-items: center;
             position: relative;
             height: 507px;
             width: 49.5%;
             max-width: 980px;
             border-radius: 10px;
+            padding: 0px 62px 0px 55px;
             border: 1px solid #E4E5F0;
+        }
+
+        .section-7__h3 {
+            margin-bottom: 46px;
+            font-size: 40px;
+            letter-spacing: -.83px;
+            line-height: 50px;
+        }
+
+        .section-7__percentage {
+            font-family: 'Roboto Black', sans-serif;
+            color: #76B2B8;
+            font-size: 48px;
+            font-weight: 900;
+            margin-right: 30px;
+            line-height: 48px;
+            letter-spacing: .88px;
+        }
+
+        .section-7__box-text {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+
+        .section-7__text {
+            width: 100%;
+            max-width: 240px;
+            font-family: 'Roboto' ,sans-serif;
+            color: #314D5C;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            letter-spacing: 0;
         }
     </style>
 </head>
@@ -967,6 +1005,17 @@
         <h2 class="section-7__h2">CLINICALLY PROVEN RESULTS</h2>
         <div class="section-7__content">
             <div class="comparison-numbers section-7__boxes">
+                <div>
+                    <h3 class="section-7__h3">Our platform vs <br/> face-to-face therapy</h3>
+                    <div class="section-7__box-text">
+                        <div class="section-7__percentage">80%</div>
+                        <div class="section-7__text">found us to be as effective or more <b>effective</b> than traditional therapy.</div>
+                    </div>
+                    <div class="section-7__box-text">
+                        <div class="section-7__percentage">98%</div>
+                        <div class="section-7__text">found us to be as effective or more <b>effective</b> than traditional therapy.</div>
+                    </div>
+                </div>
             </div>
             <div class="comparison-graphs section-7__boxes">
             </div>
