@@ -694,6 +694,8 @@
 
         .section-7__boxes {
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
             position: relative;
             height: 507px;
@@ -737,6 +739,34 @@
             line-height: 28px;
             font-weight: 400;
             letter-spacing: 0;
+        }
+
+        .section__7-right-box-text {
+            font-size: 16px;
+            position: relative;
+            margin: 0px auto;
+            max-width: 300px;
+            text-align: center;
+            line-height: 22px;
+            margin-bottom: 20px;
+        }
+
+        .box-slide-button {
+            display: flex;
+            align-items: center;
+            position: relative;
+            background-color: #EFF2F6;
+            height: 56px;
+            width: 220px;
+            border-radius: 50px;
+        }
+
+        .slide-button-months {
+            font-family: 'Roboto';
+            color: #314D5C;
+            position: absolute;
+            margin: auto 30px;
+            right: 0;
         }
     </style>
 </head>
@@ -1018,6 +1048,13 @@
                 </div>
             </div>
             <div class="comparison-graphs section-7__boxes">
+                <div class="section-7__text section__7-right-box-text">Percentage of clients experiencing clinically significant change within:</div>
+                <div class="box-slide-button">
+                    <div class="slide-button"></div>
+                    <div class="slide-button-months">3 months</div>
+                </div>
+                <div>
+                </div>
             </div>
         </div>
     </section>
