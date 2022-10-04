@@ -141,7 +141,7 @@
             margin-bottom: 12px;
         }
 
-        .button-ready {
+        .button-ready, .button-chat {
             margin: 0px 14px 0px 0px;
             width: 250px;
             height: 49px;
@@ -609,12 +609,16 @@
             z-index: 3;
         }
 
-        .section-6__h2, .section-7__h3 {
+        .section-6__h2, .section-7__h3, .section-8__h2 {
             font-size: 44px;
             font-weight: 700;
             color: #27325a;
             line-height: 61px;
             letter-spacing: 0;
+        }
+
+        .section-8__h2 {
+            font-size: 40px;
         }
 
         .box-5-stars {
@@ -682,6 +686,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 70px 4% 20px;
             height: 704px;
         }
 
@@ -773,6 +778,28 @@
             font-family: 'Roboto', sans-serif;
             margin-top: 32px;
             color: #7D8993;
+        }
+
+        .section-8 {
+            display: flex;
+            flex-direction: column;
+            height: 352px;
+            align-items: center;
+            padding: 70px 4% 20px;
+        }
+
+        .section-8__h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            max-width: 750px;
+            color: #314d5c;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+        }
+
+        .button-chat {
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -1067,8 +1094,10 @@
             Sources: <a href="http://online.liebertpub.com/doi/abs/10.1089/tmj.2016.0114?journalCode=tmj">Journal of Telemedicine e-Health</a>, <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/jclp.1056">Journal of Clinical Psychology</a>
         </div>
     </section>
-    <section class="section-7">
-
+    <section class="section-8">
+        <h2 class="section-8__h2">Still have a few questions?</h2>
+        <h3 class="section-8__h3">Chat with a live matching agent today</h3>
+        <button class="button button-chat margin-top-50">Chat live</button>
     </section>
 </body>
 </hmtl>
