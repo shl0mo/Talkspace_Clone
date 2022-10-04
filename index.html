@@ -799,18 +799,41 @@
             display: flex;
             flex-direction: row;
             align-items: flex-end;
+            justify-content: space-between;
             margin-top: 30px;
             height: 200px;
+            text-align: center;
         }
 
-        .graph-1 {
+        .graph {
             font-family: 'Roboto Bold', sans-serif;
-            background-color:#97acbd;
-            height: 80px;
             border-radius: 10px;
             padding: 15px;
-            color: #FFF;
             font-size: 18px;
+            text-align: right;
+            width: 98px;
+            margin: 0px;
+        }
+
+        .graph-1 {            
+            background-color:#97acbd;
+            height: 80px;
+            color: #FFF;
+        }
+
+        .graph-2 {
+            background-color:#76B2B8;
+            height: 80px;
+            color: #FFF;
+        }
+
+        .container-graphs p {
+            font-family: 'Bourton Line', sans-serif;
+            letter-spacing: -1.3px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            width: 120px;
         }
 
         .section-8 {
@@ -1148,13 +1171,13 @@
                 </div>
                 <div class="container-graphs">
                     <div class="box-graph-1">
-                        <div class="graph-1">
+                        <div class="graph-1 graph">
                             25%
                         </div>
                         <p>FACE-TO-FACE</p>
                     </div>
                     <div class="box-graph-2">
-                        <div class="graph-2">
+                        <div class="graph-2 graph">
                             44%
                         </div>
                         <p>OUR PLATFORM</p>
